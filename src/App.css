@@ -1,38 +1,57 @@
-.App {
+.head{
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('4.jpg');
+  height: 122vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title{
+  font-size: 50px;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.welcome{
+  font-size: 23px;
+  font-weight: 400;
+  font-style: oblique;
+  margin-top: 20px;
+}
+.container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.name{
+  color:black;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 8px;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name-box{
+  width: 360px;
+  font-weight: 700;
+  height: 40px;
+  padding-left: 15px;
+  border-color: rgb(68, 23, 158);
+  border-radius: 16px;
+}
+.btn{
+  font-size: 20px;
+}
+.reg{
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}
+.validation{
+  color: orangered;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
 }
