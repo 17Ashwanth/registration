@@ -7,19 +7,18 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('4.jpg');
-  height: 122vh;
+  height: 100vh;
 }
 .title{
-  font-size: 50px;
+  font-size: 35px;
   font-weight: 700;
   font-style: italic;
-  margin-top: 20px;
 }
 .welcome{
-  font-size: 23px;
+  font-size: 15px;
   font-weight: 400;
   font-style: oblique;
-  margin-top: 20px;
+  margin-bottom: -7px;
 }
 .container{
   display: flex;
@@ -30,16 +29,18 @@ body{
   color:black;
   font-size: 30px;
   font-weight: 700;
-  margin-top: 8px;
+  margin-top: 2px;
   
 }
 .name-box{
-  width: 360px;
+  width: 250px;
   font-weight: 700;
   height: 40px;
   padding-left: 15px;
   border-color: rgb(68, 23, 158);
   border-radius: 16px;
+  margin-bottom: -20px;
+  margin-top: -20px;
 }
 .btn{
   font-size: 20px;
@@ -47,11 +48,16 @@ body{
 .reg{
   justify-content: center;
   display: flex;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .validation{
   color: orangered;
   font-size: 20px;
   font-weight: 700;
   margin-left: 10px;
+  margin-bottom: -14px;
+  margin-top: 5px;
+}
+.set{
+  margin-top: 5px;
 }

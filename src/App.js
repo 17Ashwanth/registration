@@ -88,27 +88,35 @@ const submit=(e)=>{
       <div className='container'>
         <form onSubmit={submit}>
         <div className='form'>
-          <label htmlFor='name' className='name'>Name</label> <br></br>
-          <input className='name-box' type='text' id='name' placeholder='Enter Your Name' onChange={(e)=>{validateName(e)}} value={name} /><br></br>
-         {!isName &&<div>
-            <p className='validation'>*Invalid Input</p>
-          </div>}
-          <label htmlFor='email' className='name'>Email</label> <br></br>
-          <input value={email} className='name-box' type='email' id='email' placeholder='Enter Your Email' onChange={(e)=>{validateEmail(e)}}/><br></br>
-          { !isEmail &&<div>
-            <p className='validation'>*Invalid Input</p>
-          </div>}
-          <label htmlFor='password' className='name'>Password</label> <br></br>
-          <input className='name-box' type='password' id='password' placeholder='Enter The Password' onChange={(e)=>{validatePass(e)}} value={pass}/><br></br>
-          {!isPass &&<div>
-            <p className='validation'>*Invalid Input</p>
-          </div>}
+          <div className='set'>
+            <label htmlFor='name' className='name'>Name</label> <br></br>
+            <input className='name-box' type='text' id='name' placeholder='Enter Your Name' onChange={(e)=>{validateName(e)}} value={name} /><br></br>
+           {!isName &&<div>
+              <p className='validation'>*Invalid Input</p>
+            </div>}
+          </div>
+          <div className='set'>
+            <label htmlFor='email' className='name'>Email</label> <br></br>
+            <input value={email} className='name-box' type='email' id='email' placeholder='Enter Your Email' onChange={(e)=>{validateEmail(e)}}/><br></br>
+            { !isEmail &&<div>
+              <p className='validation'>*Invalid Input</p>
+            </div>}
+          </div>
+         <div className='set'>
+            <label htmlFor='password' className='name'>Password</label> <br></br>
+            <input className='name-box' type='password' id='password' placeholder='Enter The Password' onChange={(e)=>{validatePass(e)}} value={pass}/><br></br>
+            {!isPass &&<div>
+              <p className='validation'>*Invalid Input</p>
+            </div>}
+         </div>
 
-          <label htmlFor='phone' className='name'>Phone</label> <br></br>
-          <input className='name-box' type='tel' id='phone' placeholder='Enter The Number' onChange={(e)=>{validatePhone(e)}} value={phone}/><br></br>
-          {!isPhone &&<div>
-            <p className='validation'>*Invalid Input</p>
-          </div>}
+          <div className='set'>
+            <label htmlFor='phone' className='name'>Phone</label> <br></br>
+            <input className='name-box' type='tel' id='phone' placeholder='Enter The Number' onChange={(e)=>{validatePhone(e)}} value={phone}/><br></br>
+            {!isPhone &&<div>
+              <p className='validation'>*Invalid Input</p>
+            </div>}
+          </div>
           <div className='reg'><button type="submit" className="btn btn-success text-white" disabled={isName && isName && isPass && isPhone ?false:true} >Register</button></div>
         </div>
         </form>
